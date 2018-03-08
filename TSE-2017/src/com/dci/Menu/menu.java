@@ -1,4 +1,4 @@
-package com.dci;
+package com.dci.Menu;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

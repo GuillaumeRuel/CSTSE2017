@@ -12,7 +12,7 @@ public class OrderQueue {
     }
 
     // Method to access the instance of the singleton.
-    public OrderQueue getInstance() {
+    public static OrderQueue getInstance() {
         if(instance == null) {
             instance = new OrderQueue();
         }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="console.CommandFactoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-03-18T19:29:55" hostname="IBM-5110" time="0.005">
+  <properties/>
+  <testcase name="createCommand" classname="console.CommandFactoryTest" time="0.003"/>
+  <testcase name="createCommand2" classname="console.CommandFactoryTest" time="0.001"/>
+  <system-out><![CDATA[Before Class!
+Before!
+After!
+Before!
+After!
+After Class!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

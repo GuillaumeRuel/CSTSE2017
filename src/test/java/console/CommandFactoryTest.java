@@ -8,6 +8,7 @@ public class CommandFactoryTest {
     @Test
     public void createCommand() throws Exception {
         assertTrue("Success", true);
+
     }
 
 }

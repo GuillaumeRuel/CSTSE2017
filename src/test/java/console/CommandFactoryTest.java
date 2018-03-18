@@ -11,4 +11,10 @@ public class CommandFactoryTest {
 
     }
 
+    @Test
+    public void createCommandFail() throws Exception {
+        assertTrue("This is an error hhhhhhhhh", false);
+
+    }
+
 }

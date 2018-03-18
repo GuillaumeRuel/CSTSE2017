@@ -16,4 +16,10 @@ dependencies {
 
 }
 
-mainClassName = 'Main'
+
+run {
+    if (project.hasProperty("appArgs")) {
+        args Eval.me(appArgs)
+    }
+    main = 'Main'
+}

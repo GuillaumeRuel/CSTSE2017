@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class CommandFactoryTest {
     @Test
     public void createCommand() throws Exception {
-        
+
     }
 
 }

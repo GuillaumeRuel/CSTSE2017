@@ -29,7 +29,7 @@ public class Main {
 
         for( String command : encryptedCommands) {
             System.out.println("Order: " + command);
-            OrderQueue.get  CommandFactory.createCommand(command);
+            // OrderQueue.get  CommandFactory.createCommand(command);
         }
 
 

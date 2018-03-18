@@ -24,4 +24,8 @@ run {
     main = 'Main'
 }
 
+test {
+    include '**console/*'
+}
+
 mainClassName = 'Main'

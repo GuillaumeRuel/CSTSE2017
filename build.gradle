@@ -26,6 +26,10 @@ run {
 
 test {
     include '**console/*'
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat "full"
+    }
 }
 
 mainClassName = 'Main'

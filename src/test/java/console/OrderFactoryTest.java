@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class CommandFactoryTest {
+public class OrderFactoryTest {
     @Test
     public void createCommand() throws Exception {
         assertTrue("Success", true);

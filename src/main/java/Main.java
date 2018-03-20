@@ -1,37 +1,35 @@
-import console.CommandFactory;
+import orders.OrderFactory;
 import orders.OrderQueue;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Base64;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class Main {
 
+    /**
+     * @param args The first param mus be the map (eg. Easy_map.txt).
+     *             The second must be the mission (eg. Easy_missions.txt)
+     */
     public static void main(String[] args) {
-
+        // Printing out the params to debug
         for(String arg : args) {
             System.out.println(arg);
         }
-
-
 
         // Reading the proper file
         final String mapFileName = args[0];
         final String missionFileName = args[1];
         List<String> encryptedCommands = readMissionFile(missionFileName);
-
+        // Decrypting the base 64 orders and adding them to the order queue.
         for( String command : encryptedCommands) {
             System.out.println("Order: " + command);
-            // OrderQueue.get  CommandFactory.createCommand(command);
+            OrderQueue.getInstance().add( OrderFactory.createCommand(command));
         }
 
+        // Once the queue is filled, send the orders to the menu to get the recipes
 
     }
 

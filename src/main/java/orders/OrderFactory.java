@@ -1,15 +1,18 @@
-package console;
+package orders;
+
+import console.Base64Decoder;
+import orders.Order;
 
 import java.security.InvalidParameterException;
 
 /**
  * Takes the command from the client (including the base64 command) and parses it to get its value.
  */
-public class CommandFactory {
+public class OrderFactory {
     private static final String DELIMITER = " ";
     private static final String DEFAULT_NAME = "Jacqueline";
 
-    public static void createCommand(String customerCommand) {
+    public static Order createCommand(String customerCommand) {
         String customerName;
         String base64Command;
 
@@ -39,6 +42,13 @@ public class CommandFactory {
             System.err.println(ex.getMessage());
         }
 
+        // Once we have the command in string format, we send it to the menu.
+
+
         System.out.println(realCommand);
+
+        return null;
     }
+
+    private static Order
 }

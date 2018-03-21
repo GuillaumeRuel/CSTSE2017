@@ -40,4 +40,8 @@ public class OrderQueue {
     public List<Order> getAll() {
         return this.orders;
     }
+
+    public int size() {
+        return this.orders.size();
+    }
 }
